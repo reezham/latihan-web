@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <style>
+    body {
+    background-color:white;
+    text-align:right;
+    font-family:courier;
+    color:red;  
+    }
+    p {
+    border: 1px solid yellow;
+    }
+    form{
+      border: 1px solid black;
+    }
+    .special  {    
+       color:blue;
+    }
+    .mystyle {
+      color:green;
+    } 
+    .intro {
+      background:black;
+    }
+    .special {
+      color:white;
+    }
+    #myheader {
+      color:blue;
+    }
+    #special  {    
+       color:purple;
+    }
+ 
+    </style>
+    
+    <script type="module" src="script.js"></script>
+  </head>
+  <body >
+  <p title="About W3Schools">W3Schools is a web developer's site.</p>
+  <h1>London</h1>
+  <hr>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <pre>
+    My Bonnie lies over the ocean.
+    My Bonnie lies over the sea.
+    My Bonnie lies over the ocean.
+    Oh, bring back my Bonnie to me.
+  </pre>
+  <p style="color:blue;">This is a paragraph.</p>
+  <p style="font-family:arial;">This is a paragraph.</p>
+  <p style="text-align:center;">This is a paragraph.</p>
+  <p style="font-size:50px;">This is a paragraph.</p>
+  <p>  WWF's mission is to stop the   <strong>  degradation  </strong>   of our planet's natural environment.</p>
+  <p>Tokyo is the capital of Japan, the most populous <em> metropolitan</em> area in the world.</p>
+  HTML is <mark>FUN</mark> to learn!<br>
+  <p>H<sub>2</sub>O is the scientific term for water.</p>
+  <p>My favorite color is <del>blue</del> red.</p>
+  <p> I am so  <q> cool </q> . </p>
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+  </blockquote><br>
+  <bdo dir="rtl">What a beautiful day!</bdo><br>
+  <p>The <abbr title="World Health Organization"> WHO</abbr> was founded in 1948.</p>
+  <!-- This is a comment -->
+
+  <!-- Link -->
+  <a href="default.html">Visit our HTML tutorial.</a><br>
+  <a href="html_images.asp" style="text-decoration:none;">HTML Images</a><br>
+  <!-- Use the correct HTML attribute to make the link open in a new window. -->
+  <a href="html_images.asp" target="_blank">HTML Images</a><br>
+  
+  <a href="default.html"><img src="smiley.gif"></a><br>
+  <a href="default.html" title="Home">Back to Home</a><br>
+
+  <!-- Image -->
+  <img src="scream.png" width="250" height="400"><br>
+  <img src="scream.png" style="width:250px;height:400px;"><br>
+  <p><img src="smiley.gif" style="float:left;">This is a paragraph.This paragraph contains an image</p>
+  
+  <!-- Table -->
+  <table style="width:300px;" border="1">
+    <caption>Names</caption>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  </table><br>
+
+  <table border="1">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill Smith</td>
+    <td>50</td>
+  </tr>  
+  <tr>
+    <td>Eve Jackson</td>
+    <td>94</td>
+  </tr>
+  </table><br>
+
+  <table border="1">
+  <tr>
+    <th>Name</th>
+    <td>Jill Smith</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-77854</td>
+  </tr>
+  <tr>
+    <td>555-77854</td>
+  </tr>
+  </table><br>
+
+  <!-- List -->
+  <ul>
+    <li>Coffee</li>
+  </ul>
+
+  <ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  <ul style="list-style-type:square;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <ol type="A">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  <ol type="I">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  <dl>
+  <dt>Coffee</dt>
+    <dd>- black hot drink
+    </dd>
+  <dt>Milk</dt>
+  <dd>
+    - white cold drink
+  </dd>
+  </dl>
+
+  <!-- Classes -->
+  <p class="special">My paragraph</p>
+  <h1 class="mystyle">My Home Page</h1>
+  <h1 class="intro special">My Home Page</h1>
+
+  <!-- ID -->
+  <h1 id="myheader">My Home Page</h1>
+  <p id="special">My paragraph</p>
+
+  <!-- Iframe -->
+  <iframe src="https://www.w3schools.com"></iframe><br>
+  <iframe src="https://www.w3schools.com" width="500"></iframe><br>
+  <iframe src="https://www.w3schools.com" style="border:none;"></iframe><br>
+  <iframe src="page.html"></iframe>
+
+  <!--Script-->
+  <p id="demo">Hi.</p><br>
+  <img id="dem" src="scream.png">
+
+  <script>
+  document.getElementById("demo").innerHTML = "Hello World!";
+  document.getElementById("demo").style.fontSize = "40px";
+  document.getElementById("demo").style.color = "brown";
+  document.getElementById("dem").src = "smiley.gif";
+  </script>
+
+  <!--ComputerCode-->
+  <!--Define the text "var person;" as programming code.-->
+  <p>Code example: <code>var person;</code></p>
+
+  <p>Code example:</p>
+  <pre>
+    <code>
+      var person = {
+        firstName:"John",
+        lastName:"Doe"
+      }
+    </code>
+  </pre>
+
+  <p>A simple math equation: <var>x</var> = 3 + 2; </p>
+
+  <!--Form-->
+  <form>
+  <input type="button" value="OK"><br>
+  <input type="radio" name="fav_language" value="html"> HTML<br>
+  <input type="radio" name="fav_language" value="css">CSS
+  </form><br>
+
+  <!--Form Attribute-->
+  <form action="/action_page.php" method="post">
+    Name: <input type="text" name="name">
+    <input type="submit">
+  </form><br>
+
+  <!--Form Element-->
+  <form action="/action_page.php">
+    <select name="cars">
+      <option value="Volvo">Volvo</option>
+      <option value="Ford">Ford</option>
+    </select><br>
+    <textarea name="note"></textarea>
+  </form><br>
+
+  <!--Input Types-->
+  <form action="/action_page.php">
+    <input type="text" name="username">
+    <input type="submit" value="Submit Form"><br>
+    Favorite color:
+    Blue<input value="blue" type="radio"name="color">
+    Red<input value="red" type="radio"name="color">
+    <input type="submit"><br>
+    <input type="button" value="Click Me"><br>
+    <input type="number" min="1" max="5">
+    </form><br>
+
+    <!--Input Attributes-->
+    <form action="/action_page.php">
+      <input type="text" placeholder="Your name here"><br>
+      <input type="text" disabled><br>
+      <input type="text" maxlength="40"><br>
+      <input type="text" readonly>
+    </form>
+
+  </body>
+</html>

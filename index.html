@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Mode and Light Mode</title>
+    <style>
+    body {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Dark Mode and Light Mode</h1>
+    <button id="mode-btn">Light Mode</button><br>
+    <a href="page2.html">Visit our HTML tutorial.</a>
+
+    <script>
+    const modeBtn = document.getElementById('mode-btn');
+
+modeBtn.addEventListener('click', () => {
+    const body = document.body;
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        modeBtn.textContent = 'Light Mode';
+    } else {
+        body.classList.add('dark-mode');
+        modeBtn.textContent = 'Dark Mode';
+    }
+});
+
+    </script>
+</body>
+</html>
